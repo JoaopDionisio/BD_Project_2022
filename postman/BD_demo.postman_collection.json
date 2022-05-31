@@ -1,0 +1,595 @@
+{
+	"info": {
+		"_postman_id": "49be814f-1c2a-4b70-866f-8e63c4544f7b",
+		"name": "BD_demo Copy 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16003379"
+	},
+	"item": [
+		{
+			"name": "Obter Todos Utilizadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todas Notificacoes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJKb2FvIiwicGFzc3dvcmQiOiJqb25hczMwMDAifQ.0bJgx5fCbHbZSvgUhsWGQ9KADzZ4dG0dVl3x-SsuCiM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/notificacao/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"notificacao",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Estatisticas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/proj/report/year",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"proj",
+						"report",
+						"year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Estatisticas Campanha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/report/campaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"report",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todos Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter um produto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dbproj/produtos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"produtos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Utilizador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Avó do Pedroso\", \n    \"password\": \"Adoro o pedroso\", \n    \"email\": \"pedrosao3000@gmail.com\",\n    \"nif\": 39932929,\n    \"morada\": \"rua da mae do pedroso\",\n    \"admin\": 3,\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJSaWNhcmRvIiwicGFzc3dvcmQiOiJyaWMzMDAwIn0.zZHGy2jx01LldoGcgx55hMxJ0UiqZLQuTTRsfW4Jw3A\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Smartphone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJBdlx1MDBmMyBkbyBQZWRyb3NvIiwicGFzc3dvcmQiOiJBZG9ybyBvIHBlZHJvc28ifQ.Y31RpCrTWNAKmhOnI4OWmI6Lxv315gPOLJ3_0TuH97I\",\n    \"type\": \"smartphone\",\n    \"modelo\": \"4.3X\",\n    \"descricao\": \"IPhone smartphone\",\n    \"preco\": 10.2,\n    \"stock\": 5,\n    \"titulo\": \"IPhone 13\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Nova Televisao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJUaWEgZG8gUGVkcm9zbyIsInBhc3N3b3JkIjoiQWRvcm8gbyBwZWRyb3NvIn0.mWgbrcY2Cap6oPDDzTPjzVfkNmWm6S7N2Yw3CaVkxEA\",\n    \"type\": \"televisao\",\n    \"descricao\": \"televisao LG 90 C8\",\n    \"preco\": 100,\n    \"stock\": 5,\n    \"titulo\": \"televisao LG 90\", \n    \"tamanho\": \"42\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Novo Computador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJUaWEgZG8gUGVkcm9zbyIsInBhc3N3b3JkIjoiQWRvcm8gbyBwZWRyb3NvIn0.mWgbrcY2Cap6oPDDzTPjzVfkNmWm6S7N2Yw3CaVkxEA\",\n    \"type\": \"computador\",\n    \"descricao\": \"Asus Gaming bue top\",\n    \"preco\": 500,\n    \"stock\": 10,\n    \"titulo\": \"Asus Gaming GR8 A3\",\n    \"processador\": \"octacore bluedragon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/product/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar campanha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJSaWNhcmRvIiwicGFzc3dvcmQiOiJyaWMzMDAwIn0.zZHGy2jx01LldoGcgx55hMxJ0UiqZLQuTTRsfW4Jw3A\",\r\n    \"descricao\":\"911\",\r\n    \"fim\":\"2022-05-20 00:00:01\",\r\n    \"n_cupoes\":2,\r\n    \"desconto\":25.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/produtos/campaign",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"produtos",
+						"campaign"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"newDescricao\": \"ASUS BITCH!\",\n    \"newPreco\": \"300\",\n    \"newTitulo\": \"ASUS GAMING BITCH\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJSaWNhcmRvIiwicGFzc3dvcmQiOiJyaWMzMDAwIn0.zZHGy2jx01LldoGcgx55hMxJ0UiqZLQuTTRsfW4Jw3A\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/produto/change/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"produto",
+						"change",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Joao\",\n    \"password\": \"jonas3000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginAdmin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Ricardo\",\n    \"password\": \"ric3000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginVendedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Avó do Pedroso\",\n    \"password\": \"Adoro o pedroso\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginComprador",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_name\": \"Maria\",\n    \"password\": \"mary3000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscrever campanha",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJKb2FvIiwicGFzc3dvcmQiOiJqb25hczMwMDAifQ.0bJgx5fCbHbZSvgUhsWGQ9KADzZ4dG0dVl3x-SsuCiM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/produtos/subscribe/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"produtos",
+						"subscribe",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comentar um comentario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Olá avó!\",\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJKb2FvIiwicGFzc3dvcmQiOiJqb25hczMwMDAifQ.0bJgx5fCbHbZSvgUhsWGQ9KADzZ4dG0dVl3x-SsuCiM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/questions/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"questions",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comentar um produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Olá avó!\",\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJKb2FvIiwicGFzc3dvcmQiOiJqb25hczMwMDAifQ.0bJgx5fCbHbZSvgUhsWGQ9KADzZ4dG0dVl3x-SsuCiM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/questions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"questions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Encomenda",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"cart\": [[1,1]],\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJNYXJpYSIsInBhc3N3b3JkIjoibWFyeTMwMDAifQ.lN5aH36LYLjM5XpItOWFFQE24wP0WxdxpJ1_zKHuxzI\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/order/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"order",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comentario\": \"QUE PRODUTO FIXE\",\r\n    \"rating\": 5,\r\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJKb2FvIiwicGFzc3dvcmQiOiJqb25hczMwMDAifQ.0bJgx5fCbHbZSvgUhsWGQ9KADzZ4dG0dVl3x-SsuCiM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/dbproj/rating/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dbproj",
+						"rating",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
